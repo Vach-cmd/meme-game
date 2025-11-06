@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
             card.setAttribute('src', 'images/blank.png');
             card.setAttribute('data-id', i);
             card.addEventListener('click', flipCard);
+            card.setAttribute('width', '240px');
             grid.appendChild(card);
         }
     }
@@ -75,3 +76,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     startButton.addEventListener('click', createBoard);
 });
+
